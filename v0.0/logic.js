@@ -1,7 +1,3 @@
-function load() {
-    format();
-}
-
 function format() {
     const style = document.getElementById(`box`).style;
     [
@@ -16,6 +12,7 @@ function format() {
     [
         `background-color`,
         `border-style`,
+        `border-color`,
         `outline-style`,
         `outline-color`].map(property => {
             style[property] = document.getElementById(property).value;
